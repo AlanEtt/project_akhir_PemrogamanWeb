@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 31, 2023 at 09:38 AM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.0.28
+-- Waktu pembuatan: 31 Des 2023 pada 16.00
+-- Versi server: 10.4.27-MariaDB
+-- Versi PHP: 8.0.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `marital`
+-- Struktur dari tabel `marital`
 --
 
 CREATE TABLE `marital` (
@@ -33,7 +33,7 @@ CREATE TABLE `marital` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `marital`
+-- Dumping data untuk tabel `marital`
 --
 
 INSERT INTO `marital` (`marital_id`, `marital_name`) VALUES
@@ -46,7 +46,7 @@ INSERT INTO `marital` (`marital_id`, `marital_name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `reg_districts`
+-- Struktur dari tabel `reg_districts`
 --
 
 CREATE TABLE `reg_districts` (
@@ -56,7 +56,7 @@ CREATE TABLE `reg_districts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `reg_districts`
+-- Dumping data untuk tabel `reg_districts`
 --
 
 INSERT INTO `reg_districts` (`id`, `regency_id`, `name`) VALUES
@@ -7298,7 +7298,7 @@ INSERT INTO `reg_districts` (`id`, `regency_id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `reg_provinces`
+-- Struktur dari tabel `reg_provinces`
 --
 
 CREATE TABLE `reg_provinces` (
@@ -7307,7 +7307,7 @@ CREATE TABLE `reg_provinces` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `reg_provinces`
+-- Dumping data untuk tabel `reg_provinces`
 --
 
 INSERT INTO `reg_provinces` (`id`, `name`) VALUES
@@ -7349,7 +7349,7 @@ INSERT INTO `reg_provinces` (`id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `reg_regencies`
+-- Struktur dari tabel `reg_regencies`
 --
 
 CREATE TABLE `reg_regencies` (
@@ -7359,7 +7359,7 @@ CREATE TABLE `reg_regencies` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `reg_regencies`
+-- Dumping data untuk tabel `reg_regencies`
 --
 
 INSERT INTO `reg_regencies` (`id`, `province_id`, `name`) VALUES
@@ -7881,7 +7881,7 @@ INSERT INTO `reg_regencies` (`id`, `province_id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `reg_villages`
+-- Struktur dari tabel `reg_villages`
 --
 
 CREATE TABLE `reg_villages` (
@@ -7891,7 +7891,7 @@ CREATE TABLE `reg_villages` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `reg_villages`
+-- Dumping data untuk tabel `reg_villages`
 --
 
 INSERT INTO `reg_villages` (`id`, `district_id`, `name`) VALUES
@@ -91402,7 +91402,7 @@ INSERT INTO `reg_villages` (`id`, `district_id`, `name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `religion`
+-- Struktur dari tabel `religion`
 --
 
 CREATE TABLE `religion` (
@@ -91411,7 +91411,7 @@ CREATE TABLE `religion` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `religion`
+-- Dumping data untuk tabel `religion`
 --
 
 INSERT INTO `religion` (`religion_id`, `religion_name`) VALUES
@@ -91426,7 +91426,7 @@ INSERT INTO `religion` (`religion_id`, `religion_name`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Struktur dari tabel `user`
 --
 
 CREATE TABLE `user` (
@@ -91449,59 +91449,57 @@ CREATE TABLE `user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
--- Dumping data for table `user`
+-- Dumping data untuk tabel `user`
 --
 
 INSERT INTO `user` (`user_id`, `user_fullname`, `user_name`, `user_password`, `citizen_id`, `birth_place`, `birth_date`, `gender`, `blood_type`, `address`, `village_id`, `religion_id`, `marital_id`, `job_title`, `citizen_type`, `issued_date`) VALUES
-(7, 'erlangga nava adiloka', 'adiloka', '202cb962ac59075b964b07152d234b70', '3320112508040001', 'Tahunan Jepara', '2004-08-25', 'Laki-Laki', 'O', 'Pekeng Tahunan Jepara', '3320112012', 1, 1, 'Pengacara', 'WNI', '2023-12-30'),
-(8, 'angaaa', 'anga', '202cb962ac59075b964b07152d234b70', '3320112508040002', 'Tahunan Jepara', '2004-08-25', 'Laki-Laki', 'B', 'Pekeng Tahunan Jepara', '3320112012', 4, 1, 'nganggur', 'WNI', '2023-12-31'),
-(9, 'tes', 'tes', '202cb962ac59075b964b07152d234b70', '3320116508040003', 'Tahunan Jepara', '2004-08-25', 'Perempuan', 'A', 'Pekeng Tahunan Jepara', '3320112012', 9, 6, 'tes', 'WNI', '2023-12-31');
+(11, 'Rizki Alan Habibi', 'alanhabibi', 'a0d84bd5ef13e92fc30d6d3257a692ae', '3320112405040001', 'Jepara', '2004-05-24', 'Laki-Laki', 'O', 'Jalan Rmp Sosrokartono, Kecapi RT.32/06, Kec. Tahunan, Kab. Jepara, Jawa Tengah', '3320112013', 1, 1, 'Mahasiswa', 'WNI', '2023-12-31');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `marital`
+-- Indeks untuk tabel `marital`
 --
 ALTER TABLE `marital`
   ADD PRIMARY KEY (`marital_id`);
 
 --
--- Indexes for table `reg_districts`
+-- Indeks untuk tabel `reg_districts`
 --
 ALTER TABLE `reg_districts`
   ADD PRIMARY KEY (`id`),
   ADD KEY `districts_regency_id_index` (`regency_id`) USING BTREE;
 
 --
--- Indexes for table `reg_provinces`
+-- Indeks untuk tabel `reg_provinces`
 --
 ALTER TABLE `reg_provinces`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `reg_regencies`
+-- Indeks untuk tabel `reg_regencies`
 --
 ALTER TABLE `reg_regencies`
   ADD PRIMARY KEY (`id`),
   ADD KEY `regencies_province_id_index` (`province_id`) USING BTREE;
 
 --
--- Indexes for table `reg_villages`
+-- Indeks untuk tabel `reg_villages`
 --
 ALTER TABLE `reg_villages`
   ADD PRIMARY KEY (`id`),
   ADD KEY `villages_district_id_index` (`district_id`);
 
 --
--- Indexes for table `religion`
+-- Indeks untuk tabel `religion`
 --
 ALTER TABLE `religion`
   ADD PRIMARY KEY (`religion_id`);
 
 --
--- Indexes for table `user`
+-- Indeks untuk tabel `user`
 --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`user_id`),
@@ -91510,51 +91508,51 @@ ALTER TABLE `user`
   ADD KEY `fk_user_marital1` (`marital_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `marital`
+-- AUTO_INCREMENT untuk tabel `marital`
 --
 ALTER TABLE `marital`
   MODIFY `marital_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `religion`
+-- AUTO_INCREMENT untuk tabel `religion`
 --
 ALTER TABLE `religion`
-  MODIFY `religion_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `religion_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT for table `user`
+-- AUTO_INCREMENT untuk tabel `user`
 --
 ALTER TABLE `user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- Constraints for dumped tables
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
 --
 
 --
--- Constraints for table `reg_districts`
+-- Ketidakleluasaan untuk tabel `reg_districts`
 --
 ALTER TABLE `reg_districts`
   ADD CONSTRAINT `district_regency_foreign` FOREIGN KEY (`regency_id`) REFERENCES `reg_regencies` (`id`);
 
 --
--- Constraints for table `reg_regencies`
+-- Ketidakleluasaan untuk tabel `reg_regencies`
 --
 ALTER TABLE `reg_regencies`
   ADD CONSTRAINT `regency_province_foreign` FOREIGN KEY (`province_id`) REFERENCES `reg_provinces` (`id`);
 
 --
--- Constraints for table `reg_villages`
+-- Ketidakleluasaan untuk tabel `reg_villages`
 --
 ALTER TABLE `reg_villages`
   ADD CONSTRAINT `village_district_foreign` FOREIGN KEY (`district_id`) REFERENCES `reg_districts` (`id`);
 
 --
--- Constraints for table `user`
+-- Ketidakleluasaan untuk tabel `user`
 --
 ALTER TABLE `user`
   ADD CONSTRAINT `fk_user_marital1` FOREIGN KEY (`marital_id`) REFERENCES `marital` (`marital_id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
